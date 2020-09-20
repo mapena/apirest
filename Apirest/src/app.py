@@ -1,5 +1,11 @@
-from flask import Flask, 
-from flask import request, Response # Response para devolver al cliente un mensaje
+from flask import Flask, jsonify, request, Response
+from flask_pymongo import PyMongo
+from bson import json_util
+from bson.objectid import ObjectId
+import json
+from werkzeug.security import generate_password_hash, check_password_hash
+"""
+from flask import flask  request, Response # Response para devolver al cliente un mensaje
 from flask import jsonify  #para manejar mejor el codigo de retorno del servidor al cliente por ejemplo ver response.status.code =404
 from flask_pymongo import PyMongo
 from bson import json_util  #para convertir los formatos bson (que usa mongodb) a json
@@ -7,7 +13,7 @@ from bson.objectid import ObjectId # sirve para convertir un objeto str a objeto
 import json
 
 from werkzeug.security import generate_password_hash, check_password_hash
-
+"""
 #---------------------------------
 #---------------------------------
 import os
